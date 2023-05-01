@@ -1,0 +1,11 @@
+# создаем файл с помощью редактора Nano
+nano myfirstbashscript.sh
+# делаем файл myfirstbashscript.sh исполнительным
+chmod u+x myfirstbashscript.sh
+# пишем скрипт в файле myfirstbashscript.sh
+#!/bin/bash
+date
+NAME=Sergey
+echo "Hello $NAME"
+THIS_PATH=$(readlink -f "$0")
+echo "$THIS_PATH"
