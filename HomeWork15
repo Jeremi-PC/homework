@@ -1,0 +1,14 @@
+mkdir /Sergey
+touch /Sergey/Sergey.sh
+nano /Sergey/Sergey.sh
+--------------------------------
+#!/bin/bash
+for RUN in {1..10}
+do
+TODAY=$(date +'%d_%m_%Y')
+touch /Sergey/${RUN}_${TODAY}.txt
+echo "${RUN}_${TODAY} file created"
+sleep .5
+done
+------------------------
+/Sergey/Sergey.sh
