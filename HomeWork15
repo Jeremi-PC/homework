@@ -11,4 +11,14 @@ echo "${RUN}_${TODAY} file created"
 sleep .5
 done
 ------------------------
-/Sergey/Sergey.sh
+touch /Sergey/exe.sh
+chmod 744 /Sergey/exe.sh
+-------------------------
+#!/bin/bash                              
+for RUN in {1..100}
+do
+sleep 900
+cd /Sergey
+./Sergey.sh
+done
+/Sergey/exe.sh
